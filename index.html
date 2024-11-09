@@ -1,1 +1,5 @@
-<iframe src="http://129.153.99.114:5000/" style="display:block; width:100vw; height:100vh; frameborder:0"></iframe>
+<VirtualHost *:80>
+    ServerName https://mesomatics.github.io/piu/
+    ProxyPass "/"  "http://129.153.99.114:5000/"
+    ProxyPassReverse "/"  "http://129.153.99.114:5000/"
+</VirtualHost>
